@@ -816,4 +816,135 @@ array.forEach(function(currentValue, index, arr))
 //    console.log(element);
 // })
 
-/*js scope*/
+//array
+// const students=['john','ali','Good'];
+// for(let element of students){
+//    console.log(element);
+// }
+
+const set=new Set([1,2,3,4]);
+//looping through set
+// for(let i of set){
+//    console.log(i);
+// }
+
+
+// let map=newMap();
+// map.set('name','jack');
+// map.set('age',23);
+// for(let [key,value] of map){
+//    console.log(key+ '_'+value);
+// }
+
+
+// const iterableObj={
+//    //iterator method
+//    [Symbol.iterator](){
+//       let step=0;
+//       return{
+//          next() {
+//             step++;
+//             if (step === 1) {
+//                 return { value: '1', done: false};
+//              }
+//             else if (step === 2) {
+//                 return { value: '2', done: false};
+//             }
+//             else if (step === 3) {
+//                 return { value: '3', done: false};
+//             }
+//             return { value: '', done: true };
+//         }
+//     }
+//       }
+//    }
+// for(const i of iterableObj){
+//    console.log(i)
+// }
+
+
+
+
+// function *generator(){
+//    yield 10;
+//    yield 20;
+//    yield 30;
+// }
+// const obj=generatorFun();
+// for(let value of obj){
+//    console.log(value);
+// }
+
+
+
+const arrValue=['My','name','is'];
+console.log(arrValue);
+console.log(...arrValue); 
+//spread operator() convert array to string (my name is)
+const arr1=['one','two'];
+const arr2=[...arr1,'three','four','five'];
+console.log(arr2);
+//output
+//['one','two','three','four','five']
+// let arra1=[1,2,3];
+// let arra2=arra1;
+// console.log(arra1);
+// console.log(arra2);
+// arra1.push(4);
+// console.log(arra1);
+
+
+// let array1=[1,2,3];
+// let array2=[...array1];
+// console.log(array1);
+// console.log(array2);
+// arr1.push(4);
+
+// console.log(arr1); // [1, 2, 3, 4]
+// console.log(arr2); // [1, 2, 3]
+
+
+
+// //Rest parameter
+// let func=function(...args){
+//    console.log(args);
+// }
+// func(3);
+// func(4,5,6);
+//(...)spread operator
+// const odd=[1,3,5];
+// const combained=[2,4,6,...odd];
+// console.log(combained);
+
+// function f(a,b,...args){
+//    console.log(args);
+// }
+// f(1,2,3,4,5);
+
+// const odd=[1,3,5];
+// const combained=[...odd,2,4,6];
+// console.log(combained);
+/*
+function compare(a,b){
+   return a-b;
+}
+let result=compare.apply(null,[1,2]);
+function compare(){
+}
+console.log(result);
+*/
+
+
+// let chars=['A',...'Bc','D'];
+// console.log(chars);
+
+
+// let rivers=['Nile','Ganges','yangrn'];
+// let  moreRivers=['Danube','Amazon'];
+// [].push.apply(rivers,moreRivers);
+// console.log(rivers);
+
+// // rivers.push(...morerivers);
+
+// const score=[5,6,7];
+// console.log(scores.at(1));
