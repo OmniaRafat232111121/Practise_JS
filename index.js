@@ -24,7 +24,7 @@
 // }
 // console.log(localStorage.getItem("pageColor"));
 // console.log(classesList);
-let a="Elzero web school";
+// let a="Elzero web school";
 // console.log(a.length);
 // console.log(a.substring(1,6));
 // console.log(a.substring(6,2));
@@ -948,3 +948,290 @@ console.log(result);
 
 // const score=[5,6,7];
 // console.log(scores.at(1));
+
+// let colors=['red','green','blue'];
+// console.log(colors.length);
+// colors.push('yellow');
+// console.log(colors.length);
+// colors=[];
+// console.log(colors.length);
+//sparse array
+let numbers=[10,,30,44];
+console.log(numbers.length);
+numbers[11]=34;
+//when add number to 
+console.log(numbers.length);
+
+
+// const fruits = ['Apple', 'Orange', 'Strawberry'];
+// fruits.length = 5;
+
+// console.log(fruits);
+// const fruits = ['Apple', 'Orange', 'Strawberry'];
+// fruits.length = 2;
+
+// console.log(fruits);
+// function arrayFormArgs(){
+//    var result=[];
+//    for(var i=0;i<arguments.length;i++){
+//       result.push(arguments[i]);
+//    }
+//    return result;
+// }
+// var fruits=arrayFormArgs('a','B');
+// console.log(fruits);
+
+
+// function arrayFromArgs() {
+//    return Array.prototype.slice.call(arguments);
+// }
+// var fruits = arrayFromArgs('Apple', 'Orange', 'Banana');
+// console.log(fruits);
+
+// function arrayFromArgs() {
+//    return Array.from(arguments,x=>x+1);
+// }
+
+// console.log(arrayFromArgs(1, 5));
+// let doubler = {
+//    factor: 2,
+//    double(x) {
+//        return x * this.factor;
+//    }
+// }
+// let scores = [5, 6, 7];
+// let newScores = Array.from(scores,doubler.double, doubler);
+// console.log(newScores);
+// let even = {
+//    *[Symbol.iterator]() {
+//        for (let i = 0; i < 10; i += 2) {
+//            yield i;
+//        }
+//    }
+// };
+// let evenNumbers = Array.from(even);
+// console.log(evenNumbers);
+
+//you can concat() with two ways array,spread array
+
+let odds = [1,3,5];
+let evens = [2,4,6];
+let combined = [...odds, ...evens];
+console.log(combined);
+
+// let odds=[1,3,5];
+// let even=[2,4,6];
+
+// let com=[].concat(odds,even);
+// console.log(com);
+
+
+// let colors = ['red', 'green', 'blue'];
+// console.log(colors.length);
+// colors.push('yellow');
+// console.log(colors.length);
+// console.log(colors);
+// colors=[];
+// console.log(colors.length);
+// //sparse array
+// const fruits = ['Apple', 'Orange', 'Strawberry'];
+// fruits.length = 5;
+// console.log(fruits)
+
+
+
+//push()
+// let number = [10, 20, 30];
+
+// const length = number.push(40);
+
+// console.log(length);
+// console.log(number);
+
+
+// let colors = ['red', 'green', 'blue'];
+// let cmyk = ['cyan', 'magenta', 'yellow', 'back'];
+// for(const color of cmyk){
+//    colors.push(color);
+// }
+// console.log(colors);
+
+
+// let colors = ['red', 'green', 'blue'];
+// let cmyk = ['cyan', 'magenta', 'yellow', 'back'];
+
+// colors.push(...cmyk);
+// console.log(colors);
+// colors.push(cmyk);
+
+// console.log(colors);
+
+
+
+// let greeting={
+//    0:"Hi",
+//    1:'Hello',
+//    length:2,
+//    append(message){
+//       [].push.call(this,message);
+//    }
+// };
+
+// greeting.append("jfjjf");
+// greeting.append("jfjjf");
+// greeting.append('jsjjs');
+// greeting.append('jsjjs');
+// console.log(greeting);
+
+
+
+
+// let greeting={
+//    0:"Hi",
+//    1:'Hello',
+//    length:2,
+//    append(){
+//       [].push.call(this,...arguments);
+//    }
+// };
+
+// greeting.append("jfjjf",'ddd','sskksks');
+// console.log(greeting);
+
+
+
+// closure example
+
+// function calculate(x) {
+//    function multiply(y) {
+//        return x * y;
+//    }
+//    return multiply;
+// }
+
+// const multiply3 = calculate(3);
+// const multiply4 = calculate(4);
+
+// console.log(multiply3); // returns calculate function definition
+// console.log(multiply3()); // NaN
+
+// console.log(multiply3(6)); // 18
+// console.log(multiply4(2)); // 8
+
+// let aa = 0;
+// function sum() {
+//     function increaseSum() {
+
+//         // the value of a is increased by 1
+//         return aa = aa + 1;
+//     }
+//     return increaseSum;
+// }
+
+// const x = sum();
+// console.log(x()); // 1
+// console.log(x()); // 2
+// console.log(x()); // 3
+// aa = aa + 1;
+// console.log(aa); // 4
+
+
+// let a = 0;
+// function suum() {
+ 
+//    function increaseSum() {
+
+//        // the value of a is increased by 1
+//        return a = a + 1;
+//    }
+//    return increaseSum;
+// }
+
+// let x = suum();
+// console.log(x()); // 1
+// console.log(x()); // 2
+// a=a+6
+// console.log(a); // 6
+
+
+
+
+// function suum() {
+//    let a = 0;
+//    function increaseSum() {
+
+//        // the value of a is increased by 1
+//        return a = a + 1;
+//    }
+//    return increaseSum;
+// }
+
+// let x = suum();
+// console.log(x()); // 1
+// console.log(x()); // 2
+
+
+// console.log(a); // 6
+//closure function that have access to varible that ae present in ththeir scope chain even if outer function cease to exist
+
+
+
+
+/*
+closure Defination:
+1)this is function bundler together or enclosed with lexical scope.
+2)give access from outer function scope to inner function
+3)when creation function every time ,closure are created
+*/
+//lexical scope
+// var name="Mozilla";
+// function init(){
+ 
+//    function displayName(){//inner function is closure
+      
+//       console.log(name); //use varible declared from parent function
+//    }
+//    displayName();
+// }
+// init();
+
+// function makeFunc() {
+//    var name = 'Mozilla';
+//    function displayName() {
+//      alert(name);
+//    }
+//    return displayName;
+//  }
+ 
+//  var myFunc = makeFunc();
+//  myFunc();
+
+
+
+
+// function makeAdder(x) {
+//    return function(y) {
+//      return x + y;
+//    };
+//  }
+ 
+//  var add5 = makeAdder(5);
+//  var add10 = makeAdder(10);
+ 
+//  console.log(add5(2));  // 7
+//  console.log(add10(2)); // 12
+
+
+//Higher order Function
+// let swappingCases="elZERO";
+// let sw=swappingCases.split("").map(function(ele){
+//    return ele===ele.toUpperCase() ? ele.toUpperCase():ele.toLowerCase();
+// }).join("");
+// console.log(sw);
+
+let invertedNumbers = [1, -10, -20, 15, 100, -30];
+let inv = invertedNumbers.map(function (ele) {
+   return -ele;
+ });
+ console.log(inv);
+ 
