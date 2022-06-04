@@ -1399,11 +1399,92 @@ closure Defination:
 JSON.parse=> convert text Data to JS object.
 JSON.stringfy=>convert JS object to stringfy.
 */
-const myJsonObject='{"Username": "Osama", "Age": 39}';
-console.log(typeof myJsonObject);
-console.log(myJsonObject);
+// const myJsonObject='{"Username": "Osama", "Age": 39}';
+// console.log(typeof myJsonObject);
+// console.log(myJsonObject);
 
-// Convert To JS Object
-const myJsObject = JSON.parse(myJsonObject);
-console.log(typeof myJsObject);
-console.log(myJsObject);
+// // Convert To JS Object
+// const myJsObject = JSON.parse(myJsonObject);
+// console.log(typeof myJsObject);
+// console.log(myJsObject);
+/*object.entires()*/
+
+// const phone={
+//    name:"iphone",
+//    model:"SE",
+//    price:"43.00"
+// }
+// console.log(Object.entries(phone));
+// const phone={
+//        name:"iphone",
+//        model:"SE",
+//        price:"43.00"
+//     }
+//     for(const[key,value]of Object.entries(phone)){
+//        console.log(`${key}=>${value}`);
+//     }
+//     const phone={
+//       name:"iphone",
+//       model:"SE",
+//       price:"43.00"
+//    }
+// Object.entries(phone).forEach(([key,value])=>{
+//    console.log(`${key}=>${value}`);
+// });
+
+/*hositing*/
+// x=10;
+// var x; //can be inrialize before declare
+
+
+
+// console.log(x);
+
+// console.log(x); //undefined
+// var x=10;
+//let you hositing function
+// console.log(suum(10,20));
+// function suum(x,y){
+//    return x+y;
+// }
+
+// y=4;
+// const y;
+// console.log(y); //Reference error
+
+
+// y=4;
+// let y;
+// console.log(y); //syntax error
+
+
+/*static class */
+
+// class RandomClass{
+//    constructor(){
+
+//    }
+// }
+//    RandomClass.method=()=>{
+//       return `A is astring`;
+//    }
+
+
+2022
+//in Es6 you can define static method,constructor into class
+// class RandomClass{
+//    static method(){
+//       return "A is string"
+//    }
+
+//    constructor(){}
+// }
+
+
+// function createPhoneNumber(){
+//    const numbers=[0,1,2,3,4,5,6,7,8,9];
+//    const numbersPhone=numbers.filter(forEach((values,keys)=>(function(element){
+//      return element<=1 ? element:" ";
+//    })));
+//    console.log(numbersPhone);  
+//  };
