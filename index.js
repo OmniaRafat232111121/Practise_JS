@@ -1229,9 +1229,181 @@ closure Defination:
 // }).join("");
 // console.log(sw);
 
-let invertedNumbers = [1, -10, -20, 15, 100, -30];
-let inv = invertedNumbers.map(function (ele) {
-   return -ele;
- });
- console.log(inv);
- 
+// let invertedNumbers = [1, -10, -20, 15, 100, -30];
+// let inv = invertedNumbers.map(function (ele) {
+//    return -ele;
+//  });
+//  console.log(inv);
+
+
+/*filter*/
+// let friends=['Ahmed',"ali","Amaged","Ola"];
+// let filterFriends=friends.filter(function(el){
+//    return el.startsWith("A")? true:false;
+// });
+// console.log(filterFriends);
+// let numberrs=[11,20,2,5,17,10];
+// let evenNumbers=numberrs.filter(function(el){
+//    return el%2===0?true:false;
+// })
+// console.log(evenNumbers);
+
+
+
+// let words="I loved you more than imagine";
+// let wordsFilter=words.split(" ").filter(function(el){
+//    return el.length <=4;
+// }).join(" ");
+// console.log(wordsFilter);
+
+// let mix="ABCDS13";
+// let mixedWord=mix.split(" ").filter(function(el){
+//    return !isNaN(parseInt(el))
+// })
+// .map(function(el){
+//    return el*el;
+// });
+// console.log(mixedWord)
+
+//concat with array element into string with join()
+// const cssClass=['btn','btn-primsar',"hoodh"];
+// const btnClass=cssClass.join("_");
+// console.log(btnClass);
+
+
+// const title="javascript array join example";
+// const url=title.split(' ').join("__").toLowerCase();
+// console.log(url);
+
+//array destructuring
+// function getScores(){
+//    return [70, 80,89,99];
+
+// }
+// let [x,y,...args]=getScores();
+// console.log(x);
+// console.log(y);
+// console.log(args);
+// let a,b;
+// [a,b]=[10,20];
+// console.log(a);
+// console.log(b);
+
+// let a, b;
+// [a = 1, b = 2] = [10];
+// console.log(a); // 10
+// console.log(b); // 2
+
+
+
+// function getProfile(){
+//    return[
+//       'john',
+//       'Doe',
+//       ['Red',"Green"]
+//    ];
+// }
+//    let [
+//       firstName,
+//       lastName,
+//       [
+//           color1,
+//           color2,
+//           color3
+//       ]
+//   ] = getProfile();
+  
+//   console.log(color1, color2, color3); // Red Green Blue
+
+//   const scores = [5, 6, 7];
+
+// console.log(scores.at(1)); // same as scores[1] 
+
+// // get the last element
+// console.log(scores.at(-1)); // 7
+
+// console.log(scores.at(-1) === scores[scores.length - 1]); // true
+
+// let Doc=[10,20,30];
+// let add=Doc.reduce(function(acc,current,index,arr){
+// console.log(`Acc=>${acc}`);
+// console.log(`current=>${current}`);
+// console.log(`index=>${index}`);
+// console.log(`Array => ${arr}`);
+// console.log(acc + current);
+// console.log(`#############`);
+// return acc + current;
+// },1);
+// console.log(add)
+// let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test", "Propaganda_Two"];
+//  let check=theBiggest.reduce(function(acc,current){
+//    console.log(`Acc => ${acc}`);
+//    console.log(`Current Element => ${current}`);
+//    console.log(acc.length > current.length ? acc : current);
+//    console.log(`#############`);
+//    return acc.length > current.length ? acc : current;
+//  });
+//  console.log(check);
+
+
+
+// let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+
+// let finalString = removeChars
+//   .filter(function (ele) {
+//     return ele !== "@";
+//   }).reduce(function(acc,current){
+//    return `${acc}${current}`;
+//   })
+// console.log(finalString);
+
+
+//Returning nested function
+// function sayMessage(fName,lName){
+//    let message=`Hello`;
+//    function concatMsg(){
+//       message=`${message} ${fName} ${lName}`;
+//    }
+//    concatMsg();
+//    return message;
+// }
+// console.log(sayMessage("Osama","ali"));
+//Example 2
+
+// function sayMessage(fName,lName){
+//    let message=`Hello`;
+//    //Nested Function
+//    function concatMsg(){
+//       return `${message} ${fName} ${lName}`
+//    }
+//    return concatMsg();
+// }
+// console.log(sayMessage("dhfhhf","hfufurr"));
+
+
+// function sayMessage(fName,lName){
+//    let message=`Hello`;
+//    //Nested Function
+//    function concatMsg(){
+//       function getFullName(){
+//          return `${fName} ${lName}`;
+//       }
+//       return `${message} ${getFullName()}`;
+//     }
+//     return concatMsg();
+//   }
+  
+//   console.log(sayMessage("Osama", "Mohamed"));
+
+/*
+JSON.parse=> convert text Data to JS object.
+JSON.stringfy=>convert JS object to stringfy.
+*/
+const myJsonObject='{"Username": "Osama", "Age": 39}';
+console.log(typeof myJsonObject);
+console.log(myJsonObject);
+
+// Convert To JS Object
+const myJsObject = JSON.parse(myJsonObject);
+console.log(typeof myJsObject);
+console.log(myJsObject);
