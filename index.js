@@ -1488,3 +1488,115 @@ JSON.stringfy=>convert JS object to stringfy.
 //    })));
 //    console.log(numbersPhone);  
 //  };
+
+
+// scrollToTopBtn.onClick=()=>{
+//    window.scrollTo({ 
+//       top:0,
+//       behavior:'smooth'
+//    })
+
+// }
+
+//this keyword
+//refenence an exeuting of object
+//method=>obj
+//function=>global(window,global)
+
+// const viedo={
+//    title:'a',
+//    play(){
+//       console.log(this)
+//    }
+// }
+// viedo.stop=function(){
+//    console.log(this);
+// }
+// viedo.play(); 
+ 
+
+// var a=[1,2,3,4,5];         
+// var b=a.filter(function(x){
+//    return x<3 
+  
+// });  
+   
+// var a=[1,2,3,4,5];         
+// var b=a.filter(function(x){
+//    return x<3 
+  
+// });  
+// console.log(b);  
+// var a=[1,2,3,4,5];
+// var b=a.filter(x=>x%2);
+// console.log(b); 
+// var a=["","a","ab","aba","abab","ababa"]
+// var b=a.filter(x=>{
+//   if (x.length<2) return true;
+//   var y=x.split("").reverse().join("");
+//   return x==y;
+// })
+// console.log(b) 
+
+//findindex()
+//return the first element of condition fnction testing oteher wise -1
+//const array1 = [5, 12, 8, 1, 4];
+
+//const isLargeNumber = (element) => element > 13;
+
+//console.log(array1.findIndex(isLargeNumber));  
+//  const array1=['a','B'];
+//  array1.forEach(x=>{
+//     console.log(x);
+//  }) 
+// function isOdd(num)  {
+//    num % 2 != 0
+// }           
+// function filter(nums,fn) {
+//    let results = [];
+//    for (const num of nums) {
+//       if (fn(num)) {
+//          results.push(num);
+//        }
+//      }
+//      return results;
+//    }
+//    let nums = [1, 2, 4, 7, 3, 5, 6];
+//    console.log(filter(nums, isOdd));
+// async function myFunction(){
+//    return "Helllo";
+// }
+// myFunction().then{
+//    function(value){
+      
+//    }
+// }
+// let value=await Promise;
+// await can only be used in aync function 
+// let iterator=0;
+// while(iterator <5){
+//    iterator++;
+//    console.log(iterator)
+// }   
+// let list = [4, 5, 6];
+
+// for (let i in list) {
+//    console.log(i); // "0", "1", "2",
+// }
+
+// for (let i of list) {
+//    console.log(i); // "4", "5", "6"
+// }
+let arr = ['el1', 'el2', 'el3'];
+
+arr.addedProp = 'arrProp';
+
+// elKey are the property keys
+for (let elKey in arr) {
+  console.log(elKey);
+}
+
+// elValue are the property values
+for (let elValue of arr) {
+  console.log(elValue)
+}
